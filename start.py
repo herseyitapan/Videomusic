@@ -54,7 +54,13 @@ async def start_(client: Client, message: Message):
         f"""✨ **Salamlar {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Bot'u qruplarınıza əlavə edib musiqi keyfini yaşayın 😎**
 
-Daha çox məlumat üçün aşağıdakı komandalara göz atın👇
+🎧 Musiqi üçün əmr /play Adı və ya Linki 
+ 🎥 Video üçün Əmr /vplay Videonun Adı və ya Linki 
+Botun Daxilində və Qrupda ⬇️ 
+📲 Musiqi Yükləmək Üçün Əmr /song 
+📼 Video Yükləmək Üçün Əmr /video!
+
+💡 Əmrlər düyməsini klikləməklə Botun bütün əmrlərini və onların necə işlədiyini öyrənin!
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -66,12 +72,12 @@ Daha çox məlumat üçün aşağıdakı komandalara göz atın👇
                 ],
                 [InlineKeyboardButton("❓ Sadə Məlumat", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Komandalar", callback_data="cbcmds"),
+                    InlineKeyboardButton("💡 Əmrlər", callback_data="cbcmds"),
                     InlineKeyboardButton("👨🏻‍💻 Sahibim", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💣 Project", url=f"https://t.me/crazyprojectt"
+                        "🤍 Blog", url=f"https://t.me/VusalinBlogu"
                     )
                 ],
             ]
